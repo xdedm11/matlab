@@ -1,0 +1,14 @@
+clear
+t=0:pi/50:10*pi;
+x1=sin(t)+10*pi*cos(t);
+y1=cos(t)-10*pi*sin(t);
+z1=t;
+t=10*pi:-pi/10:0;
+x2=10*pi*ones(1,length(t));
+y2=1*ones(1,length(t));
+z2=t;
+x=[x1,x2];
+y=[y1,y2];
+z=[z1,z2];
+plot3(x,y,z)
+comet3(x,y,z)
